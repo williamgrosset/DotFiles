@@ -1,5 +1,3 @@
-# Currently using Vim Awesome plugin (https://github.com/amix/vimrc)
-
 set runtimepath+=~/.vim_runtime
 
 source ~/.vim_runtime/vimrcs/basic.vim
@@ -13,11 +11,8 @@ inoremap kj <ESC>
 set number
 set ignorecase
 set showmatch
-set smartcase
-set smarttab
 set hlsearch
 set incsearch
-set nowrap
 
 set history=1000
 set undolevels=1000
