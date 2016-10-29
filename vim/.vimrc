@@ -25,7 +25,20 @@ set foldenable
 set history=1000
 set undolevels=1000
 
+" UNBIND ARROW KEYS {{{
+" ===================================================
+for prefix in ['i', 'n', 'v']
+    for key in ['<Up>', '<Down>', '<Left>', '<Right>']
+        exe prefix . "noremap " . key . " <Nop>"
+    endfor
+endfor
+" ===================================================
+
 try
 source ~/.vim_runtime/my_configs.vim
 catch
 endtry
+
+" ===================================================
+" Comment formatting creds to github.com/jordanmckinney
+" ===================================================
