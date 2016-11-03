@@ -1,9 +1,27 @@
 " Plugins ===========================================
 " ===================================================
-
+    " Be iMproved, required
+    filetype off
+    set nocompatible
+    " Set the runtime path to include Vundle
+    set rtp+=~/.vim/bundle/Vundle.vim
+    " Initiliaze Vundle
+    call vundle#begin()
+    " Let Vundle manage Vundle, required
+    Plugin 'VundleVim/Vundle.vim'
+    " See directory/file tree
+    Plugin 'scrooloose/nerdtree'
+    " Status bar
+    Plugin 'vim-airline/vim-airline'
+    set laststatus=2
+    set noshowmode
+    " Required
+    call vundle#end()
+    filetype plugin indent on
 " ===================================================
 
 " General ===========================================
+" ===================================================
     " Number of lines of history to remember
     set history=500
     " Number of lines of undo to remember
