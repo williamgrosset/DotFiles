@@ -25,7 +25,10 @@
     " Number of lines of history to remember
     set history=500
     " Number of lines of undo to remember
-    set undolevels=500    
+    set undolevels=500
+    " Keep code to 80 columns in width
+    highlight ColorColumn ctermbg=magenta
+    call matchadd('ColorColumn', '\%81v', 100)
 " ===================================================
 
 " Appearance ========================================
@@ -64,25 +67,29 @@
 " Search ============================================
 " ===================================================
     " Highlight all search patterns
-    set hlsearch    
+    set hlsearch
     " Ignore upper/lower case
     set ignorecase
 " ===================================================
 
-" Key map for Insert Mode ===========================
+" Key Map ===========================================
 " ===================================================
+    " Leave insert mode
     inoremap jk <ESC>
     inoremap kj <ESC>
+    " Prevent cursor from jumping over wrapped lines
+    nnoremap j gj
+    nnoremap k gk
+    " ..I use ':' way too much to be pressing shift all the time
+    nnoremap ; :
+    nnoremap : ;
 " ===================================================
 
-" Unbind arrow keys =================================
+" Arrow Keys ========================================
 " ===================================================
     for prefix in ['i', 'n', 'v']
         for key in ['<Up>', '<Down>', '<Left>', '<Right>']
             exe prefix . "noremap " . key . " <Nop>"
         endfor
     endfor
-
-    "if prefix in ['i', 'n', 'v']
-    "endif
 " ===================================================
