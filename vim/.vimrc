@@ -26,9 +26,6 @@
     set history=500
     " Number of lines of undo to remember
     set undolevels=500
-    " Keep code to 80 columns in width
-    highlight ColorColumn ctermbg=magenta
-    call matchadd('ColorColumn', '\%81v', 100)
 " ===================================================
 
 " Appearance ========================================
@@ -44,6 +41,11 @@
     " Show 256 colours for colorscheme
     set t_Co=256
     colorscheme badwolf
+    " Columns > 80 in width to mark as magenta
+    highlight ColorColumn ctermbg=Magenta
+    call matchadd('ColorColumn', '\%81v', 100)
+    " Fold color to dark blue
+    highlight Folded ctermbg=DarkBlue
 " ===================================================
 
 " Format ============================================
@@ -62,6 +64,16 @@
 " ===================================================
     " Soft wrap (no linebreaks, only visual)
     set wrap linebreak nolist
+" ===================================================
+
+" Fold ==============================================
+" ===================================================
+    " Enable folding
+    set foldenable
+    " Fold on indent level
+    set foldmethod=indent
+    " Open folds by default that are < 20
+    set foldlevelstart=10
 " ===================================================
 
 " Search ============================================
@@ -83,6 +95,8 @@
     " ..I use ':' way too much to be pressing shift all the time
     nnoremap ; :
     nnoremap : ;
+    " Space to open/close fold
+    nnoremap <space> za
 " ===================================================
 
 " Arrow Keys ========================================
