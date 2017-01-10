@@ -58,6 +58,8 @@
     set shiftwidth=4
     " Insert spaces characters when tab key is pressed
     set expandtab
+    " Toggle for ':set paste' and ':set nopaste'
+    set pastetoggle=<F2>  
 " ===================================================
 
 " Wrap ==============================================
@@ -101,6 +103,7 @@
 
 " Arrow Keys ========================================
 " ===================================================
+    " Disable arrow key binds
     for prefix in ['i', 'n', 'v']
         for key in ['<Up>', '<Down>', '<Left>', '<Right>']
             exe prefix . "noremap " . key . " <Nop>"
