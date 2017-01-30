@@ -46,6 +46,8 @@
     call matchadd('ColorColumn', '\%81v', 100)
     " Fold color to dark blue
     highlight Folded ctermbg=DarkBlue
+    " Line number colors
+    hi LineNr term=bold cterm=bold ctermfg=2
 " ===================================================
 
 " Format ============================================
@@ -109,4 +111,15 @@
             exe prefix . "noremap " . key . " <Nop>"
         endfor
     endfor
+" ===================================================
+
+
+" Development with Louis ============================
+" ===================================================
+    "set tabstop=4
+    "set softtabstop=0
+    "set expandtab
+    "set shiftwidth=2
+    "set smarttab
+    "set number
 " ===================================================
