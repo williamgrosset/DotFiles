@@ -102,13 +102,3 @@
     " Space to open/close fold
     nnoremap <space> za
 " ===================================================
-
-" Development with Louis ============================
-" ===================================================
-    "set tabstop=4
-    "set softtabstop=0
-    "set expandtab
-    "set shiftwidth=2
-    "set smarttab
-    "set number
-" ===================================================
