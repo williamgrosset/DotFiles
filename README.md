@@ -1,5 +1,5 @@
 # dotfiles
-There are many dot files out there, but these are mine.
+There are many configuration files out there, but these are mine.
 
 Includes:
 + Neovim
@@ -8,4 +8,5 @@ Includes:
 ## How to install
 ...
 
-![](https://github.com/williamgrosset/DotFiles/blob/master/vim/vimexample.png)
+## Screenshot
+![](https://github.com/williamgrosset/dotfiles/blob/master/screenshot.png)
