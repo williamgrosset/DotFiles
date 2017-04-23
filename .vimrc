@@ -5,27 +5,19 @@
     filetype off
     set nocompatible
 
-    " Set the runtime path to include Vundle
-    set rtp+=~/.vim/bundle/Vundle.vim
-
-    " Initiliaze Vundle
-    call vundle#begin()
-
-    " Let Vundle manage Vundle, required
-    Plugin 'VundleVim/Vundle.vim'
+    " Directory for plugins 
+    call plug#begin('~/.vim/plugged')
 
     " See directory/file tree
-    Plugin 'scrooloose/nerdtree'
+    Plug 'scrooloose/nerdtree'
 
     " Status bar
-    Plugin 'vim-airline/vim-airline'
-
+    Plug 'vim-airline/vim-airline'
     set laststatus=2
     set noshowmode
 
-    " Required
-    call vundle#end()
-    filetype plugin indent on
+    " Initialize plugin system
+    call plug#end()
 
 " ===================================================
 
