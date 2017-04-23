@@ -8,6 +8,11 @@ Includes:
 ## How to install
 Although I **do not recommend** directly copying someone else's configuration for multiple reasons, here is a step-by-step process if you would like to play around with what I have personally use.
 
+**Prequisites**:
++ Mac OS X (currently on El Capitan 10.11.5)
++ Neovim (stable version 0.1.7)
++ Plug
+
 1. Clone this repository and copy the `.bashrc` and `.vimrc` file into your home directory:
   ```bash
   git clone https://github.com/williamgrosset/dotfiles
@@ -26,4 +31,4 @@ Although I **do not recommend** directly copying someone else's configuration fo
 5. You can now freely use `v` or `nvim` to open files using Neovim. :rocket:
 
 ## Screenshot
-![](https://github.com/williamgrosset/dotfiles/blob/master/screenshot.png)
+![Always write your tests.](https://github.com/williamgrosset/dotfiles/blob/master/screenshot.png)
