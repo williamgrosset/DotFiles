@@ -1,8 +1,8 @@
 # dotfiles
 There are many configuration files out there in this world, but these ones are mine.
 
-Includes:
-+ Neovim (with [Plug](https://github.com/junegunn/vim-plug) plugin manager)
+**Includes**:
++ Vim
 + Bash
 
 ## How to install
@@ -18,17 +18,17 @@ Although I **do not recommend** directly copying someone else's configuration fo
   git clone https://github.com/williamgrosset/dotfiles
   cp dotfiles/.vimrc ~/ && cp dotfiles/.bashrc ~/
   ```
-2. I setup a symbolic link for my Neovim configuration to work with my original **.vimrc**:
+2. Setup a symbolic link for Neovim configuration to use the original **.vimrc**:
   ```bash
   ln -s ~/.vim ~/.config/nvim
   ln -s ~/.vimrc ~/.config/nvim/init.vim
   ```
-3. Use neovim (i.e. `nvim ~/.vimrc`) to install the plugins via the Vim command line: `:PlugInstall`.
+3. Install the plugins via the Vim command line: `:PlugInstall`.
 4. Source the new `.bashrc` file:
   ```bash
   source ~/.bashrc
   ```
-5. You can now freely use `v` or `nvim` to open files using Neovim. :rocket:
+5. Use `v` or `nvim` to open files using Neovim and enjoy my configuration world. :rocket:
 
 ## Screenshot
-![Always write your tests.](https://github.com/williamgrosset/dotfiles/blob/master/screenshot.png)
+![Always write your tests](https://github.com/williamgrosset/dotfiles/blob/master/screenshot.png)
