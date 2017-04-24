@@ -6,12 +6,12 @@ There are many configuration files out there in this world, but these ones are m
 + Bash
 
 ## How to install
-Although I **do not recommend** directly copying someone else's configuration for multiple reasons, here is a step-by-step process if you would like to play around with what I have personally use.
+Although I **do not recommend** directly copying someone else's configuration for multiple reasons, here is a step-by-step process if you would like to play around with what I personally use.
 
 **Prerequisites**:
-+ Mac OS X (currently on El Capitan 10.11.5)
++ Mac OS X (currently using El Capitan 10.11.5)
 + Neovim (stable version 0.1.7)
-+ Plug
++ [Plug](https://github.com/junegunn/vim-plug) (Vim plugin manager)
 
 1. Clone this repository and copy the `.bashrc` and `.vimrc` file into your home directory:
   ```bash
