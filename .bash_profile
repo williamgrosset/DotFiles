@@ -10,3 +10,4 @@ gm () { git merge "$1"; }
 gc () { git commit -m "$1"; }
 
 export EDITOR=nvim
+export PATH="/usr/local/bin:$PATH"

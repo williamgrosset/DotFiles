@@ -13,20 +13,21 @@ Although I **do not recommend** directly copying someone else's configuration fo
 + Neovim (stable version 0.1.7)
 + [Plug](https://github.com/junegunn/vim-plug) (Vim plugin manager)
 
-1. Clone this repository and copy the `.bashrc` and `.vimrc` file into your home directory:
+1. Clone this repository and copy the `.bash_profile` and `.vimrc` files into your home directory:
   ```bash
   git clone https://github.com/williamgrosset/dotfiles
-  cp dotfiles/.vimrc ~/ && cp dotfiles/.bashrc ~/
+  cp dotfiles/.vimrc ~/ && cp dotfiles/.bash_profile ~/
   ```
 2. Setup a symbolic link for Neovim configuration to use the original **.vimrc**:
   ```bash
-  ln -s ~/.vim ~/.config/nvim
-  ln -s ~/.vimrc ~/.config/nvim/init.vim
+  mkdir -p ${XDG_CONFIG_HOME:=$HOME/.config}
+  ln -s ~/.vim $XDG_CONFIG_HOME/nvim
+  ln -s ~/.vimrc $XDG_CONFIG_HOME/nvim/init.vim
   ```
 3. Install the plugins via the Vim command line: `:PlugInstall`.
-4. Source the new `.bashrc` file:
+4. Source the new `.bash_profile` file:
   ```bash
-  source ~/.bashrc
+  source ~/.bash_profile
   ```
 5. Use `v` or `nvim` to open files using Neovim and enjoy my configuration world. :rocket:
 

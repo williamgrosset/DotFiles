@@ -6,7 +6,7 @@
     set nocompatible
 
     " Directory for plugins 
-    call plug#begin('~/.vim/plugged')
+    call plug#begin('~/.local/share/nvim/plugged')
 
     " See directory/file tree
     Plug 'scrooloose/nerdtree'
@@ -49,7 +49,7 @@
 
     " Show 256 colours for colorscheme
     set t_Co=256
-    colorscheme badwolf
+    " colorscheme badwolf
 
     " Columns > 80 in width to mark as magenta
     highlight ColorColumn ctermbg=Magenta
