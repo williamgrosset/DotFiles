@@ -13,6 +13,10 @@
 
     " Status bar
     Plug 'vim-airline/vim-airline'
+
+    " Color theme
+    Plug 'mhartington/oceanic-next'
+
     set laststatus=2
     set noshowmode
 
@@ -49,7 +53,13 @@
 
     " Show 256 colours for colorscheme
     set t_Co=256
-    " colorscheme badwolf
+
+    " For Neovim 0.1.3 and 0.1.4
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+    " Theme
+    syntax enable
+    colorscheme OceanicNext
+    let g:airline_theme='oceanicnext'
 
     " Columns > 80 in width to mark as magenta
     highlight ColorColumn ctermbg=Magenta
@@ -60,6 +70,7 @@
 
     " Line number colors
     hi LineNr term=bold cterm=bold ctermfg=2
+
 " ===================================================
 
 " Format ============================================
