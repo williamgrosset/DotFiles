@@ -21,6 +21,9 @@ alias bc="bundle check"
 alias bi="bundle install"
 alias bo="bundle open"
 
+# Rbenv
+which rbenv >/dev/null 2>&1 && eval "$(rbenv init -)"
+
 # Exports
 export EDITOR=nvim
 export PATH="/usr/local/bin:$PATH"
