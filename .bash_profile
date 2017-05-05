@@ -1,4 +1,4 @@
-# Common
+# common
 alias l="ls -la"
 alias rm="rm -i"
 alias cp="cp -i"
@@ -6,7 +6,7 @@ alias mv="mv -i"
 alias grep="grep --color"
 alias v=nvim
 
-# Git
+# git
 alias gs="git status"
 alias ga="git add ."
 alias gd="git diff"
@@ -15,15 +15,20 @@ alias gb="git branch"
 gm () { git merge "$1"; }
 gc () { git commit -m "$1"; }
 
-# Bundle
+# bundle
 alias be="bundle exec"
 alias bc="bundle check"
 alias bi="bundle install"
 alias bo="bundle open"
 
-# Rbenv
+# rbenv
 which rbenv >/dev/null 2>&1 && eval "$(rbenv init -)"
 
-# Exports
+# nvm
+export NVM_DIR=~/.nvm
+source ~/.nvm/nvm.sh
+
+# other
 export EDITOR=nvim
 export PATH="/usr/local/bin:$PATH"
+export JAVA_HOME=$(/usr/libexec/java_home)
