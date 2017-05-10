@@ -77,13 +77,13 @@
 " ===================================================
 
     " Number of visual spaces per tab
-    set tabstop=4
+    set tabstop=2
 
     " Number of spaces in tab when editing
-    set softtabstop=4
+    set softtabstop=2
 
     " Number of spaces inserted per tab
-    set shiftwidth=4
+    set shiftwidth=2
 
     " Insert spaces characters when tab key is pressed
     set expandtab
