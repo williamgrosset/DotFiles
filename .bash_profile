@@ -1,8 +1,5 @@
 # common
 alias l="ls -la"
-alias rm="rm -i"
-alias cp="cp -i"
-alias mv="mv -i"
 alias grep="grep --color"
 alias v=nvim
 
@@ -32,3 +29,6 @@ source ~/.nvm/nvm.sh
 export EDITOR=nvim
 export PATH="/usr/local/bin:$PATH"
 export JAVA_HOME=$(/usr/libexec/java_home)
+export GOPATH=~/Work/gocode
+export GOROOT=`go env GOROOT`
+export PATH=$PATH:$GOPATH/bin:$GOROOT/bin

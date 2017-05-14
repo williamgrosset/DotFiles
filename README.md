@@ -4,6 +4,7 @@ There are many configuration files out there in this world, but these ones are m
 **Includes**:
 + Vim
 + Bash
++ (will be adding [Atom](https://atom.io) details...)
 
 ## How to install
 Although I **do not recommend** directly copying someone else's configuration for multiple reasons, here is a step-by-step process if you would like to play around with what I personally use.

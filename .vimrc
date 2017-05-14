@@ -61,9 +61,9 @@
     colorscheme OceanicNext
     let g:airline_theme='oceanicnext'
 
-    " Columns > 80 in width to mark as magenta
+    " Columns > 120 in width to mark as magenta
     highlight ColorColumn ctermbg=Magenta
-    call matchadd('ColorColumn', '\%81v', 100)
+    call matchadd('ColorColumn', '\%121v', 100)
 
     " Fold color to dark blue
     highlight Folded ctermbg=DarkBlue
