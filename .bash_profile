@@ -32,3 +32,6 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export GOPATH=~/Work/gocode
 export GOROOT=`go env GOROOT`
 export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
+
+# OPAM configuration
+. /Users/williamgrosset/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
