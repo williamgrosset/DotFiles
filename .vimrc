@@ -5,7 +5,7 @@
   filetype off
   set nocompatible
   " Directory for plugins 
-  call plug#begin('~/.local/share/nvim/plugged')
+  call plug#begin('~/.vim/plugged')
   " See directory/file tree
   Plug 'scrooloose/nerdtree'
   " Status bar
@@ -54,12 +54,20 @@
 " ===================================================
 " Format ============================================
 " ===================================================
+  " JavaScript
   " Number of visual spaces per tab
-  set tabstop=2
+  " set tabstop=2
   " Number of spaces in tab when editing
-  set softtabstop=2
+  " set softtabstop=2
   " Number of spaces inserted per tab
-  set shiftwidth=2
+  " set shiftwidth=2
+  " Java, Golang
+  " Number of visual spaces per tab
+  set tabstop=8
+  " Number of spaces in tab when editing
+  set softtabstop=8
+  " Number of spaces inserted per tab
+  set shiftwidth=8
   " Insert spaces characters when tab key is pressed
   set expandtab
   " Toggle for ':set paste' and ':set nopaste'
@@ -99,4 +107,8 @@
   nnoremap : ;
   " Space to open/close fold
   nnoremap <space> za
+  noremap <C-H> <C-W>h<C-W>_
+  noremap <C-L> <C-W>l<C-W>_
+  noremap <C-J> <C-W>j<C-W>_
+  noremap <C-K> <C-W>k<C-W>_
 " ===================================================

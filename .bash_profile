@@ -26,12 +26,10 @@ export NVM_DIR=~/.nvm
 source ~/.nvm/nvm.sh
 
 # Other
+export PS1="\[\`if [[ \$? = "0" ]]; then echo '\e[32m\h\e[0m'; else echo '\e[31m\h\e[0m' ; fi\`:\$PWD\n\$ "
 export EDITOR=nvim
 export PATH="/usr/local/bin:$PATH"
 export JAVA_HOME=$(/usr/libexec/java_home)
 export GOPATH=~/Work/gocode
 export GOROOT=`go env GOROOT`
 export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
-
-# OPAM configuration
-. /Users/williamgrosset/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
