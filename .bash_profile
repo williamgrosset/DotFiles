@@ -12,6 +12,11 @@ alias gb="git branch"
 gm () { git merge "$1"; }
 gc () { git commit -m "$1"; }
 
+# Go
+export GOPATH=~/Work/gocode
+export GOROOT=`go env GOROOT`
+export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
+
 # Bundle
 alias be="bundle exec"
 alias bc="bundle check"
@@ -30,6 +35,3 @@ export PS1="\[\`if [[ \$? = "0" ]]; then echo '\e[32m\h\e[0m'; else echo '\e[31m
 export EDITOR=nvim
 export PATH="/usr/local/bin:$PATH"
 export JAVA_HOME=$(/usr/libexec/java_home)
-export GOPATH=~/Work/gocode
-export GOROOT=`go env GOROOT`
-export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
