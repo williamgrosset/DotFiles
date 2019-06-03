@@ -1,13 +1,10 @@
-# Path to your oh-my-zsh installation.
-export ZSH="/Users/williamgrosset/.oh-my-zsh"
-
 # Themes
 ZSH_THEME="robbyrussell"
 
 # Plugins
 plugins=(git)
 
-# Preferred editor for local and remote sessions
+# Editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='nvim'
 else
@@ -15,6 +12,7 @@ else
 fi
 
 # Aliases 
+## Common
 alias l="ls -la"
 alias v=nvim
 
@@ -26,4 +24,6 @@ alias gp="git push"
 alias gb="git branch"
 
 # Other
+## Path to your oh-my-zsh installation.
+export ZSH="/Users/williamgrosset/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
