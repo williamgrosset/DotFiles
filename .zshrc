@@ -18,10 +18,12 @@ alias v=nvim
 
 ## Git
 alias gs="git status"
-alias ga="git add ."
 alias gd="git diff"
 alias gp="git push"
 alias gb="git branch"
+alias gch="git checkout"
+alias ga="git add --all"
+alias gc="git commit -m"
 
 # Other
 ## Path to your oh-my-zsh installation.
