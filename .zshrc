@@ -26,6 +26,9 @@ alias ga="git add --all"
 alias gc="git commit -m"
 
 # Other
-## Path to your oh-my-zsh installation.
+## Path to oh-my-zsh installation
 export ZSH="/Users/williamgrosset/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
+
+## Flutter
+export PATH=~/anvil/flutter/bin:$PATH
