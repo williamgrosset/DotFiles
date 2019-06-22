@@ -12,11 +12,13 @@ Plug 'vim-airline/vim-airline'
 Plug 'mhartington/oceanic-next'
 set laststatus=2
 set noshowmode
-"" Highlight JS/JSX
+"" JS/JSX
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
-"" Highlight TS
+"" TS
 Plug 'leafgarland/typescript-vim'
+"" Dart
+Plug 'dart-lang/dart-vim-plugin'
 "" Initialize plugin system
 call plug#end()
 
