@@ -19,6 +19,7 @@ Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
 "" Dart
 Plug 'dart-lang/dart-vim-plugin'
+Plug 'reisub0/hot-reload.vim'
 "" Initialize plugin system
 call plug#end()
 
