@@ -20,6 +20,8 @@ Plug 'leafgarland/typescript-vim'
 "" Dart
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'reisub0/hot-reload.vim'
+"" Rust
+Plug 'rust-lang/rust.vim'
 "" Initialize plugin system
 call plug#end()
 
