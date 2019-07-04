@@ -16,6 +16,8 @@ set noshowmode
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 "" TS
+Plug 'Quramy/tsuquyomi'
+Plug 'Quramy/vim-js-pretty-template'
 Plug 'leafgarland/typescript-vim'
 "" Dart
 Plug 'dart-lang/dart-vim-plugin'
