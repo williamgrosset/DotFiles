@@ -4,13 +4,6 @@ ZSH_THEME="robbyrussell"
 # Plugins
 plugins=(git)
 
-# Editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='nvim'
-else
-  export EDITOR='vim'
-fi
-
 # Aliases 
 ## Common
 alias l="ls -la"
@@ -29,6 +22,3 @@ alias gc="git commit -m"
 ## Path to oh-my-zsh installation
 export ZSH="/Users/williamgrosset/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
-
-## Flutter
-export PATH=~/anvil/flutter/bin:$PATH
