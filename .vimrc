@@ -2,12 +2,14 @@
 "" Be iMproved, required
 filetype off
 set nocompatible
-"" Directory for plugins 
+"" Directory for plugins
 call plug#begin('~/.vim/plugged')
 "" See directory/file tree
 Plug 'scrooloose/nerdtree'
 "" Status bar
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'zacanger/angr.vim'
 "" Color theme
 Plug 'mhartington/oceanic-next'
 set laststatus=2
@@ -47,7 +49,7 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 "" Theme
 syntax enable
 colorscheme OceanicNext
-let g:airline_theme='oceanicnext'
+let g:airline_theme='angr'
 "" Columns > 120 in width to mark as magenta
 highlight ColorColumn ctermbg=Magenta
 call matchadd('ColorColumn', '\%121v', 100)
